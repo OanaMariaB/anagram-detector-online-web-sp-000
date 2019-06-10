@@ -5,8 +5,8 @@ def initialize(word)
   @word = word
 end
 
-def match
-  
+def match(%w(word))
+  self.%w(word).map{|w| w == w}
 end
 
 end
